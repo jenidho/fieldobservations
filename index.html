@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Field Observations</title>
+  <title>Existence Patterns</title>
   <script src="/_sdk/element_sdk.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&amp;family=Space+Mono:wght@400;700&amp;family=Inconsolata:wght@300;400&amp;display=swap" rel="stylesheet">
   <style>
@@ -73,55 +73,61 @@
   <script>
     const defaultConfig = {
       background_color: "#0a0a0a",
-      surface_color: "#e0e0e0",
-      text_color: "#c0c0c0",
-      accent_color: "#ffffff",
-      secondary_accent_color: "#666666",
+      surface_color: "#ffffff",
+      text_color: "#ffffff",
+      accent_color: "#888888",
+      secondary_accent_color: "#555555",
       font_family: "IBM Plex Mono",
       font_size: 14,
       static_phrase: "EXISTENCE REVEALS ITSELF IN"
     };
 
     const observations = [
-      "the cartography of wrinkles mapping a lifetime of smiles", 
-      "seeing your face reflected in the eyes of a lover",
-      "the particular silence that follows a door closing forever",
-      "the ritual of making loved ones a meal when words feel heavy",
-      "the nostalgic vibrato of late summer rain",
+      "the cartography of wrinkles mapping a lifetime of smiles",
       "handwritten marginalia slowly overtaking the authority of printed text",
-      "sharing another person's pattern language",
+      "the patina on brass handles recording the choreography of daily departures",
       "the faint echo in a long hallway preserving conversations no one recalls",
-      "the way dust motes become constellations in the afternoon light",
+      "the sediment of stories embedded in a city's unofficial shortcuts",
       "the familiar silence shared by two people who know each other very well",
       "the deepening comfort of routines once resisted",
       "flavors mellowing through prolonged fermentation",
       "the slow trust accumulated through ordinary days",
-      "the quiet relief of slipping into inside clothes the moment you reach home",
-      "the patina on brass handles recording daily departures",
-      "when laughter lights up the room more than the joke itself",
+      "the quiet relief of slipping into clothes already broken in",
+      "when laughter lingers longer than the joke itself",
       "the soft discoloration of walls where sunlight always falls",
+      "the ritual of making loved ones a meal when words feel heavy",
       "hearing your name spoken without urgency",
       "the repetitive clatter of trains engraving time into infrastructure",
+      "seeing your face reflected in the eyes of a lover",
       "the slow silence in rooms once occupied",
       "dawn light filtering gently through ancient leaves",
+      "weathered stone marked by centuries",
       "frost crystals forming on morning glass",
+      "geological strata revealing deep time",
       "hand-bound books crafted with love",
+      "a felled oak's rings counting seasons without judgment",
+      "the rings of a felled oak tree",
       "snowflake symmetry",
-      "sunrise over sand dunes in Death Valley",
+      "sunrise over sand dunes",
       "cloud formation systems",
       "body microbiomes",
-      "the pelicans that orbit the pacific coast",
+      "moss colony patterns",
+      "bird migration paths",
       "shared boredom with someone you love",
-      "the way certain songs reopen memory doors that were once closed",
-      "small acts of kindness that reshape the trajectory of a life",
+      "the way certain songs reopen memory doors once closed",
+      "small acts of kindness reshaping the trajectory of a life",
       "the patience one learns when waiting for chai to boil",
-      "the invincibility that overcomes you when you are in love",
+      "the momentary certainty that you are in love",
+      "sharing another person's pattern language",
+      "the way dust motes become constellations in the afternoon light",
       "the archaeology of coffee stains on a desk's weathered surface",
       "the geometry of cracks gilded in ancient pottery",
-      "the resonance of a name spoken in your childhood home",
+      "the particular silence that follows a door closing forever",
+      "the nostalgic vibrato of late summer rain",
+      "the resonance of a name spoken in an empty house",
       "the precise angle at which moonlight breaks on water",
       "the taxonomy of textures on a single patch of tree bark",
-      "the measurement of time in tealeaves coloring water"
+      "the measurement of time in tea leaves coloring water"
     ];
 
     let config = { ...defaultConfig };
@@ -313,6 +319,20 @@
             pointer-events: none;
           "></div>
 
+          <!-- Golden ambient light -->
+          <div style="
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, ${accentColor}08, transparent 60%);
+            filter: blur(120px);
+            animation: gridPulse 12s ease-in-out infinite;
+            pointer-events: none;
+          "></div>
+
           <!-- Main content -->
           <div style="
             position: relative;
@@ -369,7 +389,7 @@
             ">
               <!-- System title -->
               <div style="
-                margin-bottom: ${baseSize * 6}px;
+                margin-bottom: ${baseSize * 3}px;
               ">
                 <div style="
                   font-size: ${baseSize * 0.7}px;
@@ -395,7 +415,7 @@
               <div style="
                 border: 2px solid ${accentColor}40;
                 padding: ${baseSize * 2.5}px ${baseSize * 3}px;
-                margin-bottom: ${baseSize * 4}px;
+                margin-bottom: ${baseSize * 2}px;
                 background: linear-gradient(135deg, ${bgColor}, ${secondaryAccentColor}05);
                 position: relative;
                 box-shadow: 0 0 60px ${accentColor}20, inset 0 0 60px ${accentColor}05;
@@ -443,13 +463,13 @@
 
               <!-- Navigation scrollbar -->
               <div style="
-                margin-bottom: ${baseSize * 3}px;
+                margin-bottom: ${baseSize * 2}px;
                 border: 1px solid ${secondaryAccentColor}20;
-                padding: ${baseSize * 2}px;
+                padding: ${baseSize * 1.2}px ${baseSize * 1.5}px;
                 background: ${bgColor};
               ">
                 <div style="
-                  font-size: ${baseSize * 0.6}px;
+                  font-size: ${baseSize * 0.55}px;
                   color: ${secondaryAccentColor};
                   letter-spacing: 0.1em;
                   margin-bottom: ${baseSize * 1.5}px;
@@ -459,23 +479,23 @@
                 <div style="
                   display: flex;
                   align-items: center;
-                  gap: ${baseSize * 2}px;
+                  gap: ${baseSize * 1.5}px;
                 ">
                   <button id="nav-prev" style="
                     background: none;
-                    border: 1px solid ${accentColor};
-                    color: ${accentColor};
-                    width: ${baseSize * 2.5}px;
-                    height: ${baseSize * 2.5}px;
+                    border: 1px solid ${textColor};
+                    color: ${textColor};
+                    width: ${baseSize * 2}px;
+                    height: ${baseSize * 2}px;
                     cursor: pointer;
-                    font-size: ${baseSize * 0.8}px;
+                    font-size: ${baseSize * 0.7}px;
                     font-family: ${baseFontStack};
                     transition: all 0.2s;
                   ">◄</button>
                   
                   <div style="
                     flex: 1;
-                    height: ${baseSize * 2.5}px;
+                    height: ${baseSize * 2}px;
                     background: ${secondaryAccentColor}10;
                     position: relative;
                     border: 1px solid ${secondaryAccentColor}20;
@@ -494,7 +514,7 @@
                         left: 0;
                         height: 100%;
                         width: ${(1 / observations.length) * 100}%;
-                        background: ${accentColor};
+                        background: ${textColor};
                         border-right: 2px solid ${bgColor};
                         transition: left 0.3s ease;
                       "></div>
@@ -522,16 +542,46 @@
                   
                   <button id="nav-next" style="
                     background: none;
-                    border: 1px solid ${accentColor};
-                    color: ${accentColor};
-                    width: ${baseSize * 2.5}px;
-                    height: ${baseSize * 2.5}px;
+                    border: 1px solid ${textColor};
+                    color: ${textColor};
+                    width: ${baseSize * 2}px;
+                    height: ${baseSize * 2}px;
                     cursor: pointer;
-                    font-size: ${baseSize * 0.8}px;
+                    font-size: ${baseSize * 0.7}px;
                     font-family: ${baseFontStack};
                     transition: all 0.2s;
                   ">►</button>
                 </div>
+              </div>
+
+              <!-- Personal statement below observation -->
+              <div style="
+                max-width: 800px;
+                padding: ${baseSize * 2}px;
+                margin-bottom: ${baseSize * 2}px;
+                background: ${secondaryAccentColor}05;
+                border-left: 2px solid ${secondaryAccentColor}20;
+              ">
+                <div style="
+                  font-size: ${baseSize * 0.55}px;
+                  color: ${secondaryAccentColor};
+                  letter-spacing: 0.15em;
+                  margin-bottom: ${baseSize * 1.2}px;
+                  text-transform: uppercase;
+                ">ARCHIVAL FRAMEWORK</div>
+                <p style="
+                  font-size: ${baseSize * 0.75}px;
+                  color: ${textColor};
+                  line-height: 1.8;
+                  letter-spacing: 0.025em;
+                  font-family: ${baseFontStack};
+                  font-weight: 400;
+                  font-style: italic;
+                  text-rendering: optimizeLegibility;
+                  -webkit-font-smoothing: antialiased;
+                  -moz-osx-font-smoothing: grayscale;
+                  opacity: 0.85;
+                ">In 2026, I am tracking the delicate moments through which existence reveals itself to me. A coalescence of what feels light and heavy, and therefore true. This is an archive of observations, assembled slowly.</p>
               </div>
 
               <!-- System metrics -->
@@ -539,6 +589,7 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: ${baseSize * 2}px;
+                margin-bottom: ${baseSize * 3}px;
               ">
                 <div style="
                   border: 1px solid ${secondaryAccentColor}20;
@@ -554,7 +605,7 @@
                   ">SEQUENCE</div>
                   <div style="
                     font-size: ${baseSize * 1.5}px;
-                    color: ${accentColor};
+                    color: ${textColor};
                     font-weight: 500;
                   " id="counter">001/045</div>
                 </div>
@@ -573,7 +624,7 @@
                   ">INTERVAL</div>
                   <div style="
                     font-size: ${baseSize * 1.5}px;
-                    color: ${accentColor};
+                    color: ${textColor};
                     font-weight: 500;
                   " id="interval-display">7.0s</div>
                 </div>
@@ -592,11 +643,13 @@
                   ">STATUS</div>
                   <div style="
                     font-size: ${baseSize * 1.5}px;
-                    color: ${accentColor};
+                    color: ${textColor};
                     font-weight: 500;
                   " id="status-display">ACTIVE</div>
                 </div>
               </div>
+
+
             </main>
           </div>
         </div>
@@ -682,10 +735,10 @@
             font-family: ${baseFontStack};
             font-size: ${baseSize * 1.6}px;
             font-weight: 300;
-            color: ${accentColor};
+            color: ${textColor};
             line-height: 1.8;
             letter-spacing: 0.03em;
-            text-shadow: 0 0 30px ${accentColor}60, 0 0 60px ${accentColor}30, 0 0 90px ${accentColor}15;
+            text-shadow: 0 0 40px ${accentColor}40, 0 0 80px ${accentColor}20;
             max-width: 800px;
           ">${observations[currentIndex]}</p>
         </div>
@@ -735,24 +788,24 @@
       if (prevBtn) {
         prevBtn.onclick = navigatePrev;
         prevBtn.onmouseenter = function() {
-          this.style.background = config.accent_color || defaultConfig.accent_color;
+          this.style.background = config.text_color || defaultConfig.text_color;
           this.style.color = config.background_color || defaultConfig.background_color;
         };
         prevBtn.onmouseleave = function() {
           this.style.background = 'none';
-          this.style.color = config.accent_color || defaultConfig.accent_color;
+          this.style.color = config.text_color || defaultConfig.text_color;
         };
       }
 
       if (nextBtn) {
         nextBtn.onclick = navigateNext;
         nextBtn.onmouseenter = function() {
-          this.style.background = config.accent_color || defaultConfig.accent_color;
+          this.style.background = config.text_color || defaultConfig.text_color;
           this.style.color = config.background_color || defaultConfig.background_color;
         };
         nextBtn.onmouseleave = function() {
           this.style.background = 'none';
-          this.style.color = config.accent_color || defaultConfig.accent_color;
+          this.style.color = config.text_color || defaultConfig.text_color;
         };
       }
 
@@ -843,5 +896,5 @@
     // Initial render
     render();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ba8a15f95288ae3',t:'MTc2Nzg0MzE3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9baf299265de8ae3',t:'MTc2NzkxMTY2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
