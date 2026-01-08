@@ -340,16 +340,16 @@
             min-height: 100%;
             display: flex;
             flex-direction: column;
-            padding: ${baseSize * 4}px;
+            padding: ${baseSize * 3}px ${baseSize * 3}px ${baseSize * 2}px;
           ">
             <!-- Header metadata -->
             <header style="
               display: grid;
               grid-template-columns: 1fr auto;
-              gap: ${baseSize * 2}px;
-              padding-bottom: ${baseSize * 2}px;
+              gap: ${baseSize * 1.5}px;
+              padding-bottom: ${baseSize * 1.5}px;
               border-bottom: 1px solid ${secondaryAccentColor}20;
-              margin-bottom: ${baseSize * 4}px;
+              margin-bottom: ${baseSize * 2.5}px;
             ">
               <div>
                 <div style="
@@ -383,19 +383,19 @@
               display: flex;
               flex-direction: column;
               justify-content: center;
-              max-width: 900px;
+              max-width: 1000px;
               margin: 0 auto;
               width: 100%;
             ">
               <!-- System title -->
               <div style="
-                margin-bottom: ${baseSize * 3}px;
+                margin-bottom: ${baseSize * 2}px;
               ">
                 <div style="
                   font-size: ${baseSize * 0.7}px;
                   color: ${secondaryAccentColor};
                   letter-spacing: 0.2em;
-                  margin-bottom: ${baseSize}px;
+                  margin-bottom: ${baseSize * 0.7}px;
                   text-transform: uppercase;
                 ">SYSTEM OUTPUT</div>
                 <h1 style="
@@ -403,7 +403,7 @@
                   font-weight: 500;
                   color: ${surfaceColor};
                   letter-spacing: 0.05em;
-                  line-height: 1.4;
+                  line-height: 1.3;
                   text-transform: uppercase;
                   font-family: ${baseFontStack};
                   border-left: 2px solid ${accentColor};
@@ -414,8 +414,8 @@
               <!-- Data visualization area -->
               <div style="
                 border: 2px solid ${accentColor}40;
-                padding: ${baseSize * 2.5}px ${baseSize * 3}px;
-                margin-bottom: ${baseSize * 2}px;
+                padding: ${baseSize * 2}px ${baseSize * 2.5}px;
+                margin-bottom: ${baseSize * 1.5}px;
                 background: linear-gradient(135deg, ${bgColor}, ${secondaryAccentColor}05);
                 position: relative;
                 box-shadow: 0 0 60px ${accentColor}20, inset 0 0 60px ${accentColor}05;
@@ -445,7 +445,7 @@
                     font-size: ${baseSize * 0.7}px;
                     color: ${accentColor};
                     letter-spacing: 0.2em;
-                    margin-bottom: ${baseSize}px;
+                    margin-bottom: ${baseSize * 0.8}px;
                     text-transform: uppercase;
                     opacity: 0.7;
                   ">DATA_POINT_<span id="data-index">001</span></div>
@@ -454,7 +454,7 @@
                     font-size: ${baseSize * 1.6}px;
                     font-weight: 300;
                     color: ${textColor};
-                    line-height: 1.8;
+                    line-height: 1.6;
                     letter-spacing: 0.03em;
                     max-width: 800px;
                   ">${observations[0]}</p>
@@ -463,16 +463,16 @@
 
               <!-- Navigation scrollbar -->
               <div style="
-                margin-bottom: ${baseSize * 2}px;
+                margin-bottom: ${baseSize * 1.5}px;
                 border: 1px solid ${secondaryAccentColor}20;
-                padding: ${baseSize * 1.2}px ${baseSize * 1.5}px;
+                padding: ${baseSize}px ${baseSize * 1.2}px;
                 background: ${bgColor};
               ">
                 <div style="
                   font-size: ${baseSize * 0.55}px;
                   color: ${secondaryAccentColor};
                   letter-spacing: 0.1em;
-                  margin-bottom: ${baseSize * 1.5}px;
+                  margin-bottom: ${baseSize * 0.8}px;
                   text-transform: uppercase;
                 ">OBSERVATION NAVIGATOR</div>
                 
@@ -556,9 +556,9 @@
 
               <!-- Personal statement below observation -->
               <div style="
-                max-width: 800px;
-                padding: ${baseSize * 2}px;
-                margin-bottom: ${baseSize * 2}px;
+                max-width: 900px;
+                padding: ${baseSize * 1.5}px ${baseSize * 2}px;
+                margin-bottom: ${baseSize * 1.5}px;
                 background: ${secondaryAccentColor}05;
                 border-left: 2px solid ${secondaryAccentColor}20;
               ">
@@ -566,13 +566,13 @@
                   font-size: ${baseSize * 0.55}px;
                   color: ${secondaryAccentColor};
                   letter-spacing: 0.15em;
-                  margin-bottom: ${baseSize * 1.2}px;
+                  margin-bottom: ${baseSize * 0.8}px;
                   text-transform: uppercase;
                 ">ARCHIVAL FRAMEWORK</div>
                 <p style="
                   font-size: ${baseSize * 0.75}px;
                   color: ${textColor};
-                  line-height: 1.8;
+                  line-height: 1.7;
                   letter-spacing: 0.025em;
                   font-family: ${baseFontStack};
                   font-weight: 400;
@@ -588,19 +588,19 @@
               <div style="
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: ${baseSize * 2}px;
-                margin-bottom: ${baseSize * 3}px;
+                gap: ${baseSize * 1.5}px;
+                margin-bottom: ${baseSize * 2}px;
               ">
                 <div style="
                   border: 1px solid ${secondaryAccentColor}20;
-                  padding: ${baseSize * 1.5}px;
+                  padding: ${baseSize * 1.2}px;
                   background: ${bgColor};
                 ">
                   <div style="
                     font-size: ${baseSize * 0.6}px;
                     color: ${secondaryAccentColor};
                     letter-spacing: 0.1em;
-                    margin-bottom: ${baseSize * 0.5}px;
+                    margin-bottom: ${baseSize * 0.4}px;
                     text-transform: uppercase;
                   ">SEQUENCE</div>
                   <div style="
@@ -612,14 +612,14 @@
                 
                 <div style="
                   border: 1px solid ${secondaryAccentColor}20;
-                  padding: ${baseSize * 1.5}px;
+                  padding: ${baseSize * 1.2}px;
                   background: ${bgColor};
                 ">
                   <div style="
                     font-size: ${baseSize * 0.6}px;
                     color: ${secondaryAccentColor};
                     letter-spacing: 0.1em;
-                    margin-bottom: ${baseSize * 0.5}px;
+                    margin-bottom: ${baseSize * 0.4}px;
                     text-transform: uppercase;
                   ">INTERVAL</div>
                   <div style="
@@ -631,14 +631,14 @@
 
                 <div style="
                   border: 1px solid ${secondaryAccentColor}20;
-                  padding: ${baseSize * 1.5}px;
+                  padding: ${baseSize * 1.2}px;
                   background: ${bgColor};
                 ">
                   <div style="
                     font-size: ${baseSize * 0.6}px;
                     color: ${secondaryAccentColor};
                     letter-spacing: 0.1em;
-                    margin-bottom: ${baseSize * 0.5}px;
+                    margin-bottom: ${baseSize * 0.4}px;
                     text-transform: uppercase;
                   ">STATUS</div>
                   <div style="
@@ -736,7 +736,7 @@
             font-size: ${baseSize * 1.6}px;
             font-weight: 300;
             color: ${textColor};
-            line-height: 1.8;
+            line-height: 1.6;
             letter-spacing: 0.03em;
             text-shadow: 0 0 40px ${accentColor}40, 0 0 80px ${accentColor}20;
             max-width: 800px;
@@ -896,5 +896,5 @@
     // Initial render
     render();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9baf299265de8ae3',t:'MTc2NzkxMTY2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9baf3537743b8ae3',t:'MTc2NzkxMjE0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
