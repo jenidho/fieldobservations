@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Existence Patterns</title>
+  <title>Field Observations</title>
   <script src="/_sdk/element_sdk.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&amp;family=Space+Mono:wght@400;700&amp;family=Inconsolata:wght@300;400&amp;display=swap" rel="stylesheet">
   <style>
@@ -319,17 +319,86 @@
             pointer-events: none;
           "></div>
 
-          <!-- Golden ambient light -->
+          <!-- Atmospheric background layers -->
+          <!-- Primary radial glow - top center -->
           <div style="
             position: absolute;
-            top: 20%;
+            top: 15%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 1200px;
+            height: 1200px;
+            background: radial-gradient(circle at center, ${accentColor}12, ${accentColor}06 40%, transparent 70%);
+            filter: blur(100px);
+            animation: gridPulse 15s ease-in-out infinite;
+            pointer-events: none;
+          "></div>
+          
+          <!-- Secondary diagonal sweep -->
+          <div style="
+            position: absolute;
+            top: 30%;
+            right: -10%;
             width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, ${accentColor}08, transparent 60%);
+            height: 1400px;
+            background: linear-gradient(135deg, transparent, ${secondaryAccentColor}08 30%, ${accentColor}10 50%, transparent 80%);
             filter: blur(120px);
-            animation: gridPulse 12s ease-in-out infinite;
+            animation: gridPulse 20s ease-in-out infinite 2s;
+            pointer-events: none;
+            transform: rotate(-25deg);
+          "></div>
+          
+          <!-- Bottom left glow -->
+          <div style="
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 900px;
+            height: 900px;
+            background: radial-gradient(circle at center, ${accentColor}08, transparent 60%);
+            filter: blur(140px);
+            animation: gridPulse 18s ease-in-out infinite 5s;
+            pointer-events: none;
+          "></div>
+          
+          <!-- Subtle noise texture overlay -->
+          <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+              repeating-linear-gradient(0deg, transparent, transparent 2px, ${secondaryAccentColor}02 2px, ${secondaryAccentColor}02 4px),
+              repeating-linear-gradient(90deg, transparent, transparent 2px, ${secondaryAccentColor}02 2px, ${secondaryAccentColor}02 4px);
+            opacity: 0.3;
+            pointer-events: none;
+          "></div>
+          
+          <!-- Orbital rings -->
+          <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid ${accentColor}05;
+            border-radius: 50%;
+            animation: rotate 60s linear infinite;
+            pointer-events: none;
+          "></div>
+          
+          <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1400px;
+            height: 1400px;
+            border: 1px solid ${secondaryAccentColor}03;
+            border-radius: 50%;
+            animation: rotate 90s linear infinite reverse;
             pointer-events: none;
           "></div>
 
@@ -340,7 +409,7 @@
             min-height: 100%;
             display: flex;
             flex-direction: column;
-            padding: ${baseSize * 3}px ${baseSize * 3}px ${baseSize * 2}px;
+            padding: ${baseSize * 3}px ${baseSize * 4.5}px ${baseSize * 2}px;
           ">
             <!-- Header metadata -->
             <header style="
@@ -896,5 +965,5 @@
     // Initial render
     render();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9baf3537743b8ae3',t:'MTc2NzkxMjE0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9baf37a1c618c3eb',t:'MTc2NzkxMjI0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
