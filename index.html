@@ -400,7 +400,7 @@
               <!-- Data visualization area -->
               <div style="
                 border: 2px solid ${accentColor}40;
-                padding: ${baseSize * 5}px;
+                padding: ${baseSize * 2}px ${baseSize * 2.5}px;
                 margin-bottom: ${baseSize * 4}px;
                 background: linear-gradient(135deg, ${bgColor}, ${secondaryAccentColor}05);
                 position: relative;
@@ -426,31 +426,24 @@
                 "></div>
 
                 <!-- Observation data -->
-                <div style="
-                  min-height: ${baseSize * 12}px;
-                  display: flex;
-                  align-items: center;
-                  padding: ${baseSize * 3}px 0;
-                ">
-                  <div id="observation-container" style="width: 100%;">
-                    <div style="
-                      font-size: ${baseSize * 0.7}px;
-                      color: ${accentColor};
-                      letter-spacing: 0.2em;
-                      margin-bottom: ${baseSize * 2}px;
-                      text-transform: uppercase;
-                      opacity: 0.7;
-                    ">DATA_POINT_<span id="data-index">001</span></div>
-                    <p style="
-                      font-family: ${baseFontStack};
-                      font-size: ${baseSize * 1.6}px;
-                      font-weight: 300;
-                      color: ${textColor};
-                      line-height: 1.8;
-                      letter-spacing: 0.03em;
-                      max-width: 800px;
-                    ">${observations[0]}</p>
-                  </div>
+                <div id="observation-container" style="width: 100%;">
+                  <div style="
+                    font-size: ${baseSize * 0.7}px;
+                    color: ${accentColor};
+                    letter-spacing: 0.2em;
+                    margin-bottom: ${baseSize}px;
+                    text-transform: uppercase;
+                    opacity: 0.7;
+                  ">DATA_POINT_<span id="data-index">001</span></div>
+                  <p style="
+                    font-family: ${baseFontStack};
+                    font-size: ${baseSize * 1.6}px;
+                    font-weight: 300;
+                    color: ${textColor};
+                    line-height: 1.8;
+                    letter-spacing: 0.03em;
+                    max-width: 800px;
+                  ">${observations[0]}</p>
                 </div>
               </div>
 
@@ -685,7 +678,7 @@
             font-size: ${baseSize * 0.7}px;
             color: ${accentColor};
             letter-spacing: 0.2em;
-            margin-bottom: ${baseSize * 2}px;
+            margin-bottom: ${baseSize}px;
             text-transform: uppercase;
             opacity: 0.7;
           ">DATA_POINT_${displayIndex}</div>
@@ -854,5 +847,5 @@
     // Initial render
     render();
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ba8964247ba33a6',t:'MTc2Nzg0MjcxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ba89a34159733a6',t:'MTc2Nzg0Mjg4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
