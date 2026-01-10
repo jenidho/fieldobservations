@@ -3,15 +3,11 @@
 * Artwork and code by Jeni Dhodary
 * (https://fieldobservations.jenidho.com/)
 
--
-
 # About
 
 This repository contains the source code for Field Observation, a personal project emulating an observation journal.
 The implementation and the idea are both integral to the work.  
 You are welcome to study, learn from, and build upon this project in non-commercial contexts, provided appropriate credit is given.
-
--
 
 # Usage & License
 
@@ -27,8 +23,6 @@ Under the following conditions:
 
 If you are interested in commercial use, exhibitions, or licensing, please contact me.
 
--
-
 # Citation
 
 If you reference, study, or build upon this work, please credit it as follows:
@@ -40,15 +34,11 @@ If you reference, study, or build upon this work, please credit it as follows:
 
 For academic or curatorial contexts, you may also cite the repository directly.
 
--
-
 # Notes
 
 * This repository is shared as part of an open artistic and learning practice.
 * Direct copying or commercial reuse without permission is not allowed.
 * Interpretations and derivative works should meaningfully transform the original.
-
----
 
 # Contact
 
