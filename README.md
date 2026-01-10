@@ -23,7 +23,7 @@ You are free to:
 Under the following conditions:
 
 * **Attribution**: You must give appropriate credit
-* **NonCommercial**: You may not use the material for commercial purposes
+* **Non-Commercial**: You may not use the material for commercial purposes
 
 If you are interested in commercial use, exhibitions, or licensing, please contact me.
 
@@ -33,8 +33,7 @@ If you reference, study, or build upon this work, please credit it as follows:
 
 > **Field Observations**  
 > Jeni Dhodary, 2026  
-> GitHub: https://github.com/jenidho/fieldobservations  
-> Website: https://fieldobservations.jenidho.com/
+> GitHub: https://github.com/jenidho/fieldobservations | Website: https://fieldobservations.jenidho.com/
 
 For academic or curatorial contexts, you may also cite the repository directly.
 
